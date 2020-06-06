@@ -44,7 +44,7 @@
         });
         //Task 1 - Step 2: Listen for message from server when some client created a new chat message and update HTML page
         socket.on('chat message', function(msg) {
-            $('#messages').prepend(`<li class="list-group-item">${msg}</li>`);
+            $('#messages').prepend(`<li class="list-group-item" style="font-size:40px">${msg}</li>`);
             //$('#messages').prepend($('<li>').text(msg));
         });
 
